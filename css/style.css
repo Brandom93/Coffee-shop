@@ -213,3 +213,61 @@ img {
     
 }
 /* TERMINA FOOTER */
+
+
+/* NOSOTROS */
+@media (min-width:768px) {
+    
+
+    .sobre-nosotros{
+        display: flex;
+        gap: 2rem;
+    }
+    .sobre-nosotros__imagen,
+    .sobre-nosotros__texto{
+        flex-basis: 50%;
+    }
+}
+/* /NOSOTROS */
+
+/* CURSOS */
+
+.entrada-curso{
+    border-bottom: 1px solid var(--gris);
+}
+.entrada-curso:last-of-type{
+    border: none;
+}
+
+.entrada-curso__info{
+    font-family: var(--fuenteHeading);
+}
+@media (min-width:768px) {
+    .entrada-curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+        margin-bottom: 4rem;
+        padding-bottom: 4rem;
+    }
+    
+}
+/* /CURSOS */
+
+/* ENTRADAS */
+.entrada__texto{
+    font-family: var(--fuenteHeading);
+}
+.contenedor-entrada{
+    margin-top: 4rem;
+}
+/* /ENTRADAS */
+
+/* CONTACTO */
+.contacto-bg{
+    background-image: url(/img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* /CONTACTO */
