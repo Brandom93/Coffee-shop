@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrada</title>
-
-    <link rel="preload" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/normalize.css">
     
+    <link rel="preload" href="/css/normalize.css" as="style">
+    <link rel="stylesheet" href="/css/normalize.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     
-    <link rel="preload" href="/css/style.css">
     <link rel="stylesheet" href="/css/style.css">
 
 </head>
@@ -49,20 +48,24 @@
 
         <form class="formulario">
             <div class="campo">
-                <label for="nombre">Nombre</label>
-                <input type="text" placeholder="Tu Nombre" id="nombre">
+                <label for="nombre" class="campo__label">Nombre</label>
+                <input class="campo__field" type="text" placeholder="Tu Nombre" id="nombre">
             </div>
 
             <div class="campo">
-                <label for="email">E-mail</label>
-                <input type="email" placeholder="Tu Email" id="email">
+                <label for="email" class="campo__label">E-mail</label>
+                <input class="campo__field" type="email" placeholder="Tu Email" id="email">
             </div>
             
             <div class="campo">
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje"></texta>
+                <label for="mensaje" class="campo__label ">Mensaje</label>
+                <textarea class="campo__field campo__field--textarea" id="mensaje"></textarea>
             </div>
 
+            <div class="campo">
+                <input type="submit" value="Enviar" class="boton boton--primario">
+            </div>
+           
         </form>
     </main>
 
@@ -80,7 +83,6 @@
             </nav>
         </div>
     </footer>
-
 
 </body>
 </html>
